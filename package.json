@@ -1,7 +1,7 @@
 {
-  "name": "@kavimo/vis3-nextjs",
+  "name": "@kavimo/vis3-next-react",
   "version": "1.0.0",
-  "description": "Kavimo Vis3 NextJs",
+  "description": "Kavimo Vis3 NextJs, React Component",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
@@ -20,9 +20,9 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/kavimo/vis3-nextjs/issues"
+    "url": "https://github.com/kavimo/vis3-next-react/issues"
   },
-  "homepage": "https://github.com/kavimo/vis3-nextjs#readme",
+  "homepage": "https://github.com/kavimo/vis3-next-react#readme",
   "scripts": {
     "build": "babel src -d dist"
   },

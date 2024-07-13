@@ -1,4 +1,4 @@
-# vis3-next-react
+# Vis3 next-react
 Kavimo Vis3 NextJs, React Component
 
 # Installation:
@@ -6,7 +6,7 @@ Kavimo Vis3 NextJs, React Component
 npm i @kavimo/vis3-next-react
 ```
 
-# Use in Nextjs Home:
+# Use in Nextjs Pages Home:
 ```
 import { Vis3 } from '@kavimo/vis3-next-react';
 
@@ -26,7 +26,58 @@ export default function Home() {
 
 ```
 
-# Handle:
+# Use in React App:
+```
+import { Vis3 } from '@kavimo/vis3-next-react'
+
+const handleLoad = ( media ) => {
+    console.log('Vis: Media Loaded');
+    console.log( media )
+}
+
+function App() {
+  return (
+    <div className="App">
+      <Vis3 domainName="stream.domain.com" ID="xxxxxxxxxxxx" onLoad={handleLoad} />
+    </div>
+  );
+}
+
+export default App;
+```
+
+# Use in Nextjs App Router Home:
+```
+export default async function Page({ params }) {
+  return (
+    <>
+      <HomeComponent />
+    </>
+  )
+}
+
+
+// Home Component File:
+
+'use client'
+const HomeComponent = () => {
+    
+    const handleLoad = ( media ) => {
+        console.log('Vis: Media Loaded');
+        console.log( media )
+    }
+
+    return (
+        <main>
+            <Vis3 domainName="stream.domain.com" ID="xxxxxxxxxxxx" onLoad={handleLoad} />
+        </main>
+    );
+}
+
+export default LoginForm;
+```
+
+# Handler Mehtod:
 ```
 /**
  * handleLoad - Function to handle the loading of media.

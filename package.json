@@ -1,0 +1,40 @@
+{
+  "name": "@kavimo/vis3-nextjs",
+  "version": "1.0.0",
+  "description": "Kavimo Vis3 NextJs",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavimo/vis3-nextjs.git"
+  },
+  "keywords": [
+    "kavimo",
+    "vis3",
+    "kavimo-vis3",
+    "vis3-nextjs",
+    "vis3-react"
+  ],
+  "author": "Kavimo",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/kavimo/vis3-nextjs/issues"
+  },
+  "homepage": "https://github.com/kavimo/vis3-nextjs#readme",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.15.7"
+  }
+}
